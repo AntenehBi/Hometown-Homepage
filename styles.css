@@ -1,0 +1,159 @@
+/* General styling for the body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-top: 10px;
+}
+
+/* Activities Section */
+.activities {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.activities h2 {
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 30px;
+}
+
+/* Image Gallery Styling */
+.activity-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+figure {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+figure:hover img {
+    transform: scale(1.05);
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Guide Section */
+.guide {
+    background-color: #f0f0f0;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.guide h2 {
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.guide p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.guide-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.guide-info h3 {
+    font-size: 1.5rem;
+    color: #003366;
+    margin-right: 20px;
+}
+
+.guide-info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* New Sheger Park Image and Caption */
+.activity-gallery figure:nth-child(5) {
+    width: 300px;
+    height: 200px;
+}
+
+.activity-gallery figure:nth-child(5) img {
+    object-fit: cover;
+}
+
+.activity-gallery figure:nth-child(5) figcaption {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .activity-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .guide-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .guide-info h3 {
+        margin-bottom: 10px;
+    }
+
+    .guide-info img {
+        margin-top: 10px;
+    }
+}
